@@ -1,0 +1,32 @@
+<script>
+  function call()
+  {
+  var a=("My Name Is Abhay")
+  var t=a.split("")
+  var x=""
+  
+  for(var i=0;i<t.length;i++)
+{
+    var ascii=t[i].charCodeAt(0)
+    if(ascii>=97 && ascii<=123)
+    {
+      x=x+t[i].toUpperCase()
+    }
+    else if(ascii>=65 &&ascii<=90)
+    {
+      x=x+t[i].toLowerCase()
+    }
+    else
+    {
+      x=x+t[i]
+    }
+
+       
+}
+result.innerHTML=x
+  }
+</script>
+<html>
+  <input type="button" value=clikc here" onclick="call()">
+  <span id="result"></span>
+</html>
